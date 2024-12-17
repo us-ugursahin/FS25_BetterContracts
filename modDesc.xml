@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="93">
+    <author>Mmtrx</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Better Contracts</en>
+    </title>
+    <description>
+        <en>
+            <![CDATA[
+First version for FS25. Just contains the basic functions
+
+- clear list of available contracts 
+
+- generate new contracts 
+
+- unlimited number of active contracts (You can set he limit by editing FS25_BetterContracts.xml in the corresponding savegame directory, changing parameter "maxActive". The file is written when you save a game with this mod active.)
+
+I plan to implement additional functions in next releases of the mod.
+
+GitHub link: https://github.com/Mmtrx/FS25_BetterContracts
+]]>
+        </en>
+        <de>
+            <![CDATA[
+Erste Version für FS25, die nur die Basisfunktionen enthält
+
+- Löschen der Auftragsliste
+
+- Erzeugen neuer Aufträge
+
+- Beliebig viele aktive Aufträge (Sie können die Maximalzahl in der Datei FS25_BetterContracts.xml im entsprechenden Savegame-Verzeichnis anpassen, Parameter "maxActive". Die Datei wird beim Speichern des Spiels erzeugt, wenn diese Mod aktiv ist.)
+
+Weitere Funktionen sind für die Zukunft geplant.
+
+GitHub link: https://github.com/Mmtrx/FS25_BetterContracts
+]]>
+        </de>
+        <fr>
+            <![CDATA[
+Première version pour FS25, qui ne contient que les fonctions de base :
+
+- Suppression de la liste des contrats proposés
+
+- Création de nouveaux contrats 
+
+- N'importe quel nombre de contrats actives (vous pouvez modifier le nombre maximum dans le fichier FS25_BetterContracts.xml dans le répertoire de savegame correspondant, paramètre «maxActive». Le fichier est créé lors de la sauvegarde du jeu si ce mod est actif).    
+]]>
+        </fr>
+    </description>
+    <iconFilename>icon_BetterContracts.dds</iconFilename>
+    <multiplayer supported="true" />
+    <extraSourceFiles>
+        <sourceFile filename="betterContracts.lua" />
+        <sourceFile filename="scripts/debug.lua" />
+        <sourceFile filename="scripts/events.lua" />
+        <sourceFile filename="scripts/gui.lua" />
+        <sourceFile filename="scripts/missionVehicles.lua" />
+        <sourceFile filename="scripts/options.lua" />
+        <sourceFile filename="scripts/settings.lua" />
+        <sourceFile filename="scripts/userint.lua" />
+    </extraSourceFiles>
+    <l10n filenamePrefix="l10n/l10n" />
+    <actions>
+        <action name="MENU_EXTRA_3" category="SYSTEM" axisType="HALF" ignoreComboMask="true" />
+        <action name="BC_MTOGGLE" category="SYSTEM" axisType="HALF" ignoreComboMask="true" />
+    </actions>
+    <inputBinding>
+        <actionBinding action="MENU_EXTRA_3">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_d" index="1" />
+        </actionBinding>
+        <actionBinding action="BC_MTOGGLE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_m" index="1" />
+        </actionBinding>
+    </inputBinding>
+    <!--
+    <storeItems>
+        <storeItem xmlFilename="missionVehicles/sw4014.xml"/>
+        <storeItem xmlFilename="missionVehicles/multipackD14.xml"/>
+    </storeItems>
+    -->
+</modDesc>
