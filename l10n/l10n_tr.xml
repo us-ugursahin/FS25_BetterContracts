@@ -9,7 +9,7 @@
 		<text name="bc_hidden" text="Gizli: %d" />
 		<text name="bc_other" text="Diğer" />
 		<text name="bc_new_contracts" text="Yeni" />
-		<text name="bc_clear_contracts" text="Kontratları" />
+		<text name="bc_clear_contracts" text="Temizle" />
 		<text name="bc_detailsOff" text="BC kapalı" />
 		<text name="bc_detailsOn" text="BC açık" />
 
